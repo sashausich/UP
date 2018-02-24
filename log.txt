@@ -1,0 +1,11 @@
+commit ed492748bf7f34da57a9843989e5c4f5da823e19
+Author: AlexanderUsatov <sashausich@gmail.com>
+Date:   Sat Feb 17 11:49:53 2018 +0300
+
+    origin
+
+commit e50c678943ccb8aaae9a0c9840afd045dc67ef5e
+Author: AlexanderUsatov <sashausich@gmail.com>
+Date:   Tue Feb 13 12:13:49 2018 +0300
+
+    add .gitignore
