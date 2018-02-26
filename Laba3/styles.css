@@ -1,0 +1,34 @@
+body {
+    font-family: sans-serif;
+    background-color: #EEEEEE;
+}
+
+#head {
+    width: 100%;
+    height: 6%;
+    background-color: gold;
+    color: red;
+    position: fixed;
+    text-align: center;
+    font-size: 200%;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+nav {
+    text-align: center;
+    padding: 2%;
+}
+
+a{
+    padding: 1%;
+}
+
+
+article {
+    padding-top: 5%; 
+    padding-bottom: 5%;
+    text-align: center;
+}
