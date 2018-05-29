@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>UPGram</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="assets/css/main.css" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+</head>
+<body>
+	<canvas id="flying-bubbles"></canvas>
+	<script src="assets/js/background.js"></script>
+	<script src="assets/js/main.js"></script>
+	<div id="filter" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close">X</a>
+			<h2>Filter posts:</h2>
+			<p>Author name: <input type="text" value="Oleg Safonov" id="filter_author" /></p>
+			<p>Enter date: <input type="text" value="23.03.2018" id="filter_date" /></p>
+			<p>Tag: 
+				<select id="filter_tag">
+					<option selected disabled>Choose tag</option>
+					<option value="nice">nice</option>
+					<option value="cool">cool</option>
+					<option value="winter">winter</option>
+				</select>
+			</p>
+			<p><button onclick="binoreApi.requestFilter();">Search</button></p>
+		</div>
+	</div>
+	<div id="newpost" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close">X</a>
+			<h2>New post:</h2>
+			<p>Author name: <b>Oleg Safonov</b></p>
+			<p>Enter tags: <input type="text" value="winter cool" /></p>
+			<p>Date: <b>27.03.2018 at 3:15</b></p>
+			<p>Description:<br> <textarea rows="5" cols="54"></textarea></p>
+			<p>Select file: <input type="file"></p>
+			<p><input type="submit" value="Post"></p>
+		</div>
+	</div>
+	<div id="error" class="modalDialog">
+		<div style="text-align:center;">
+			<a href="#close" title="Close" class="close">X</a>
+			<h2>We catch some errors :(</h2>
+			<p>Please, refresh ur page or contact developer</p>
+		</div>
+	</div>
+	<div id="login" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close">X</a>
+			<h2>Log me in:</h2>
+			<p>Nickname: <input type="text" /></p>
+			<p>Password: <input type="password"/></p>
+			<p><input type="submit" value="Login"></p>
+		</div>
+	</div>
+	<header class="header">
+		<a href="#link" class="logo"><i class="far fa-clone"></i> UPGram</a>
+		<div class="header-right border">
+			<a href="#newpost">Add new post</a>
+			<a href="#login">UserName</a>
+			<a href="#error">Log out</a>
+		</div>
+		<div class="header-right">
+			<a href="#filter">Use Filter</a> 
+		</div>
+	</header>
+	<div class="middle">
+		<div id="post_container" class="container">
+		</div>
+	</div>
+	<div id="load_more" class="load">
+		<div onclick="binoreApi.requestPosts();">Load more</div>
+	</div>
+	<footer class="footer">
+		<div class="me">
+			<strong>© UPGram by Sasha Usatov, 2018</strong>
+			<p>
+				E-mail: <a href="mailto:sashausich@gmail.com">sashausich@gmail.com</a>
+			</p>
+			<p>
+				2 Course, 5 group
+			</p>
+		</div>
+		<div class="last_edit"><strong>Last edit: 29.05.2018</strong></div>
+	</footer>
+</body>
+</html>
